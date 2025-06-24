@@ -13,10 +13,21 @@
     "install:frontend": "cd front-end && npm install",
     "install:all": "npm run install:backend && npm run install:frontend"
   },
-  "keywords": ["task-manager", "nextjs", "express", "typescript"],
+  "keywords": [
+    "task-manager",
+    "nextjs",
+    "express",
+    "typescript"
+  ],
   "author": "",
   "license": "ISC",
   "engines": {
     "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.23"
   }
-} 
+}
