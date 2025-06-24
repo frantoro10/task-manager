@@ -5,12 +5,12 @@
 ![Next.js](https://img.shields.io/badge/Next.js-15.3.4-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
-![Express](https://img.shields.io/badge/Express-5.1.0-green?style=for-the-badge&logo=express)
+![Express](https://img.shields.io/badge/Express-4.18.2-green?style=for-the-badge&logo=express)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.10-38B2AC?style=for-the-badge&logo=tailwind-css)
 
-**Una aplicación completa de gestión de tareas construida con Next.js, React, TypeScript y Express**
+**A complete task management application built with Next.js, React, TypeScript, and Express**
 
-[🚀 Demo](#demo) • [✨ Características](#características) • [🛠️ Tecnologías](#tecnologías) • [📁 Estructura](#estructura) • [🚀 Instalación](#instalación) • [📖 Uso](#uso) • [🔧 API](#api)
+[🚀 Demo](#demo) • [✨ Features](#features) • [🛠️ Technologies](#technologies) • [📁 Project Structure](#project-structure) • [🚀 Installation](#installation) • [📖 Usage](#usage) • [🔧 API](#api)
 
 
 
@@ -18,150 +18,150 @@
 
 ## 🎯 Demo
 
-Una aplicación moderna y responsive para gestionar tus tareas diarias con una interfaz intuitiva y funcionalidades completas de CRUD.
+A modern and responsive application to manage your daily tasks with an intuitive interface and full CRUD functionality.
 
-### ✨ Características Principales
+### ✨ Main Features
 
-- ✅ **Gestión completa de tareas** (Crear, Leer, Actualizar, Eliminar)
-- 🎨 **Interfaz moderna y responsive** con Tailwind CSS
-- ⚡ **Rendimiento optimizado** con Next.js 15 y React 19
-- 🔄 **Actualización en tiempo real** del estado de las tareas
-- 📱 **Diseño mobile-first** y completamente responsive
-- 🎯 **Validación de formularios** en tiempo real
-- 📊 **Estadísticas visuales** (total, completadas, pendientes)
-- 💾 **Persistencia de datos** con almacenamiento local
-- 🔧 **API RESTful** completa con Express
+- ✅ **Full task management** (Create, Read, Update, Delete)
+- 🎨 **Modern and responsive UI** with Tailwind CSS
+- ⚡ **Optimized performance** with Next.js 15 and React 19
+- 🔄 **Real-time task state updates**
+- 📱 **Mobile-first and fully responsive design**
+- 🎯 **Real-time form validation**
+- 📊 **Visual statistics** (total, completed, pending)
+- 💾 **Data persistence** with local storage
+- 🔧 **Full RESTful API** with Express
 
 ---
 
-## 🛠️ Tecnologías
+## 🛠️ Technologies
 
 ### Frontend
-- **Next.js 15.3.4** - Framework de React con SSR
-- **React 19.0.0** - Biblioteca de interfaz de usuario
-- **TypeScript 5** - Tipado estático
-- **Tailwind CSS 4.1.10** - Framework de CSS utility-first
-- **PostCSS** - Procesador de CSS
+- **Next.js 15.3.4** - React framework with SSR
+- **React 19.0.0** - UI library
+- **TypeScript 5** - Static typing
+- **Tailwind CSS 4.1.10** - Utility-first CSS framework
+- **PostCSS** - CSS processor
 
 ### Backend
-- **Express 5.1.0** - Framework web para Node.js
-- **TypeScript 5.8.3** - Tipado estático
-- **CORS** - Middleware para Cross-Origin Resource Sharing
-- **Node.js** - Runtime de JavaScript
+- **Express 4.18.2** - Web framework for Node.js
+- **TypeScript 5.8.3** - Static typing
+- **CORS** - Middleware for Cross-Origin Resource Sharing
+- **Node.js** - JavaScript runtime
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
 task-manager/
-├── 📁 front-end/                 # Aplicación Next.js
+├── 📁 front-end/                 # Next.js application
 │   ├── 📁 src/
-│   │   ├── 📁 app/              # App Router de Next.js
-│   │   │   ├── 📁 tasks/        # Página de tareas
-│   │   │   ├── layout.tsx       # Layout principal
-│   │   │   └── page.tsx         # Página de inicio
-│   │   ├── 📁 components/       # Componentes React
-│   │   │   ├── TaskForm.tsx     # Formulario de tareas
-│   │   │   ├── TaskItem.tsx     # Item individual de tarea
-│   │   │   └── TaskList.tsx     # Lista de tareas
-│   │   ├── 📁 lib/              # Utilidades y configuración
-│   │   │   └── 📁 api/          # Cliente API
-│   │   └── 📁 types/            # Definiciones de tipos
+│   │   ├── 📁 app/              # Next.js App Router
+│   │   │   ├── 📁 tasks/        # Tasks page
+│   │   │   ├── layout.tsx       # Main layout
+│   │   │   └── page.tsx         # Home page
+│   │   ├── 📁 components/       # React components
+│   │   │   ├── TaskForm.tsx     # Task form
+│   │   │   ├── TaskItem.tsx     # Single task item
+│   │   │   └── TaskList.tsx     # Task list
+│   │   ├── 📁 lib/              # Utilities and config
+│   │   │   └── 📁 api/          # API client
+│   │   └── 📁 types/            # Type definitions
 │   └── package.json
-├── 📁 back-end/                 # API Express
+├── 📁 back-end/                 # Express API
 │   ├── 📁 src/
-│   │   ├── 📁 lib/              # Utilidades
-│   │   │   └── taskStorage.ts   # Gestión de almacenamiento
-│   │   ├── 📁 routes/           # Rutas de la API
-│   │   │   └── tasks.ts         # Endpoints de tareas
-│   │   ├── app.ts               # Configuración de Express
-│   │   ├── index.ts             # Punto de entrada
-│   │   └── types.ts             # Tipos de TypeScript
+│   │   ├── 📁 lib/              # Utilities
+│   │   │   └── taskStorage.ts   # Storage management
+│   │   ├── 📁 routes/           # API routes
+│   │   │   └── tasks.ts         # Task endpoints
+│   │   ├── app.ts               # Express config
+│   │   ├── index.ts             # Entry point
+│   │   └── types.ts             # TypeScript types
 │   └── package.json
 └── README.md
 ```
 
 ---
 
-## 🚀 Instalación
+## 🚀 Installation
 
-### Prerrequisitos
+### Prerequisites
 - Node.js 18+ 
-- npm o yarn
+- npm or yarn
 
-### 1. Clonar el repositorio
+### 1. Clone the repository
 ```bash
-git clone <tu-repositorio>
+git clone <your-repo>
 cd task-manager
 ```
 
-### 2. Instalar dependencias del Backend
+### 2. Install Backend dependencies
 ```bash
 cd back-end
 npm install
 ```
 
-### 3. Instalar dependencias del Frontend
+### 3. Install Frontend dependencies
 ```bash
 cd ../front-end
 npm install
 ```
 
-### 4. Configurar variables de entorno
-Crear archivo `.env` en la raíz del frontend:
+### 4. Set up environment variables
+Create a `.env` file in the root of the frontend:
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:4000
 ```
 
 ---
 
-## 🚀 Ejecución
+## 🚀 Running the App
 
-### Iniciar el Backend
+### Start the Backend
 ```bash
 cd back-end
 npm run dev
 ```
-El servidor estará disponible en: `http://localhost:4000`
+The server will be available at: `http://localhost:4000`
 
-### Iniciar el Frontend
+### Start the Frontend
 ```bash
 cd front-end
 npm run dev
 ```
-La aplicación estará disponible en: `http://localhost:3000`
+The app will be available at: `http://localhost:3000`
 
 ---
 
-## 📖 Uso
+## 📖 Usage
 
-### Funcionalidades Principales
+### Main Features
 
-1. **📝 Crear Tarea**
-   - Haz clic en "Nueva Tarea"
-   - Completa el título (obligatorio, mínimo 3 caracteres)
-   - Agrega una descripción opcional (máximo 500 caracteres)
-   - Marca si está completada
-   - Guarda la tarea
+1. **📝 Create Task**
+   - Click "New Task"
+   - Fill in the title (required, min 3 characters)
+   - Optionally add a description (max 500 characters)
+   - Mark as completed if needed
+   - Save the task
 
-2. **✏️ Editar Tarea**
-   - Haz clic en "Editar" en cualquier tarea
-   - Modifica los campos necesarios
-   - Guarda los cambios
+2. **✏️ Edit Task**
+   - Click "Edit" on any task
+   - Modify the necessary fields
+   - Save the changes
 
-3. **✅ Marcar como Completada**
-   - Haz clic en el círculo junto al título
-   - La tarea se moverá a la sección "Completadas"
+3. **✅ Mark as Completed**
+   - Click the circle next to the title
+   - The task will move to the "Completed" section
 
-4. **🗑️ Eliminar Tarea**
-   - Haz clic en "Eliminar"
-   - Confirma la acción
+4. **🗑️ Delete Task**
+   - Click "Delete"
+   - Confirm the action
 
-5. **📊 Ver Estadísticas**
-   - Total de tareas
-   - Tareas completadas
-   - Tareas pendientes
+5. **📊 View Statistics**
+   - Total tasks
+   - Completed tasks
+   - Pending tasks
 
 ---
 
@@ -169,14 +169,14 @@ La aplicación estará disponible en: `http://localhost:3000`
 
 ### Endpoints
 
-| Método | Endpoint | Descripción |
-|--------|----------|-------------|
-| `GET` | `/api/tasks` | Obtener todas las tareas |
-| `POST` | `/api/tasks` | Crear nueva tarea |
-| `PUT` | `/api/tasks/:id` | Actualizar tarea existente |
-| `DELETE` | `/api/tasks/:id` | Eliminar tarea |
+| Method | Endpoint         | Description            |
+|--------|------------------|------------------------|
+| `GET`  | `/api/tasks`     | Get all tasks          |
+| `POST` | `/api/tasks`     | Create a new task      |
+| `PUT`  | `/api/tasks/:id` | Update an existing task|
+| `DELETE`| `/api/tasks/:id`| Delete a task          |
 
-### Estructura de Tarea
+### Task Structure
 ```typescript
 interface Task {
   id: string;
@@ -188,86 +188,83 @@ interface Task {
 }
 ```
 
-### Ejemplos de Uso
+### Usage Examples
 
-#### Crear Tarea
+#### Create Task
 ```bash
 curl -X POST http://localhost:4000/api/tasks \
   -H "Content-Type: application/json" \
   -d '{
-    "title": "Mi primera tarea",
-    "description": "Descripción de la tarea",
+    "title": "My first task",
+    "description": "Task description",
     "completed": false
   }'
 ```
 
-#### Obtener Tareas
+#### Get Tasks
 ```bash
 curl http://localhost:4000/api/tasks
 ```
 
 ---
 
-## 🎨 Características de la UI
+## 🎨 UI Features
 
-- **🎯 Diseño Moderno**: Interfaz limpia y profesional
-- **📱 Responsive**: Funciona perfectamente en móviles y desktop
-- **⚡ Animaciones**: Transiciones suaves y feedback visual
-- **🎨 Tema Consistente**: Paleta de colores coherente
-- **♿ Accesibilidad**: Navegación por teclado y screen readers
+- **🎯 Modern Design**: Clean and professional interface
+- **📱 Responsive**: Works perfectly on mobile and desktop
+- **⚡ Animations**: Smooth transitions and visual feedback
+- **🎨 Consistent Theme**: Cohesive color palette
+- **♿ Accessibility**: Keyboard navigation and screen reader support
 
 ---
 
-## 🔧 Scripts Disponibles
+## 🔧 Available Scripts
 
 ### Frontend
 ```bash
-npm run dev      # Desarrollo con Turbopack
-npm run build    # Build de producción
-npm run start    # Servidor de producción
-npm run lint     # Linting con ESLint
+npm run dev      # Development with Turbopack
+npm run build    # Production build
+npm run start    # Production server
+npm run lint     # Linting with ESLint
 ```
 
 ### Backend
 ```bash
-npm run dev      # Desarrollo con hot reload
+npm run dev      # Development with hot reload
 ```
 
 ---
 
-## 🐛 Solución de Problemas
+## 🐛 Troubleshooting
 
-### Error de Hidratación
-Si encuentras errores de hidratación, asegúrate de:
-- Usar la función `formatDate()` para fechas
-- Normalizar fechas con `normalizeDate()`
-- Tener `suppressHydrationWarning` en el layout
+### Hydration Error
+If you encounter hydration errors, make sure to:
+- Use the `formatDate()` function for dates
+- Normalize dates with `normalizeDate()`
+- Add `suppressHydrationWarning` in the layout
 
 ### CORS Issues
-El backend está configurado con CORS habilitado para desarrollo local.
+The backend is configured with CORS enabled for local development.
 
 ---
 
-## 🤝 Contribución
+## 🤝 Contributing
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia ISC. Ver el archivo `LICENSE` para más detalles.
+1. Fork the project
+2. Create a branch for your feature (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
+## 📄 License
 
+This project is licensed under the ISC License. See the `LICENSE` file for more details.
 
-**¡Gracias por usar Task Manager! 🎉**
+---
 
-Si te gustó el proyecto, ¡dale una ⭐!
+**Thanks for using Task Manager! 🎉**
 
-</div> 
+If you liked the project, please give it a ⭐!
+
