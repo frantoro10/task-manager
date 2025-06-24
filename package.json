@@ -1,0 +1,22 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "Task Manager Full Stack Application",
+  "main": "back-end/dist/index.js",
+  "scripts": {
+    "dev:backend": "cd back-end && npm run dev",
+    "dev:frontend": "cd front-end && npm run dev",
+    "build:backend": "cd back-end && npm run build",
+    "build:frontend": "cd front-end && npm run build",
+    "start": "cd back-end && npm start",
+    "install:backend": "cd back-end && npm install",
+    "install:frontend": "cd front-end && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend"
+  },
+  "keywords": ["task-manager", "nextjs", "express", "typescript"],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 
